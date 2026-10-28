@@ -1,3 +1,14 @@
+--- a/luci-theme-argon/root/etc/uci-defaults/30_luci-theme-argon
++++ b/luci-theme-argon/root/etc/uci-defaults/30_luci-theme-argon
+@@ -63,7 +63,6 @@ if [ "$PKG_UPGRADE" != 1 ]; then
+ 	uci get luci.themes.Argon >/dev/null 2>&1 || \
+ 	uci batch <<-EOF
+ 		set luci.themes.Argon=/luci-static/argon
+-		set luci.main.mediaurlbase=/luci-static/argon
+ 		commit luci
+ 	EOF
+ fi
+
 --- a/luci-theme-argon/root/usr/share/luci/menu.d/luci-app-argon-config.json
 +++ b/luci-theme-argon/root/usr/share/luci/menu.d/luci-app-argon-config.json
 @@ -8,7 +8,14 @@
