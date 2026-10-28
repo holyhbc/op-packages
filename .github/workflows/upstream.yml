@@ -313,7 +313,7 @@ jobs:
         git_clone https://github.com/EkkoG/luci-app-natmap
         git_clone https://github.com/yichya/openwrt-hv-tools
         git_clone https://github.com/ddimension/openwrt-repo && mv -f openwrt-repo/*wwand* ./;rm -rf openwrt-repo
-        git_clone https://github.com/jerrykuku/luci-theme-argon
+        git_clone https://github.com/jerrykuku/luci-theme-argon && rm -rf luci-theme-argon/compat
         ) &
         (
         git_clone https://github.com/EasyTier/luci-app-easytier luci-app-easytier1 && mvdir luci-app-easytier1
