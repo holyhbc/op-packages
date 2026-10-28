@@ -64,8 +64,8 @@
  	white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
  	text-decoration: none !important;
  }
-@@ -716,6 +716,12 @@ html:has(.vt-tabs:not([hidden])) { --stick-top: calc(var(--top-h) + 41px); }
- 	border-radius: 10px;
+@@ -778,6 +778,12 @@ a.vt-crumb:hover { color: var(--text); }
+ 	border-radius: var(--r-lg);
  	box-shadow: var(--v-shadow);
  	min-width: 0;
 +	background-clip: padding-box;
@@ -75,8 +75,8 @@
 +    padding: 10px !important;
 +    border: none !important;
  }
- /* card header row */
- .cbi-section > h3:first-child, .cbi-section > legend:first-child, .cbi-section > .cbi-title:first-child,
+ /* Card padding supplies the space after the final paragraph. */
+ .cbi-section > p:last-child { margin-bottom: 0; }
 @@ -1982,7 +1988,28 @@ html:not([data-darkmode="true"]) .vt-login-page {
  		linear-gradient(90deg, rgba(20, 23, 26, .04) 1px, transparent 1px) 0 0 / 32px 32px,
  		var(--bg);
